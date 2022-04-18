@@ -157,23 +157,35 @@ span {
     color: white;
     text-shadow: black 2px 3px 18px;
 }
-.menu-restaurant{
+
+.menu-restaurant {
+    
+    color: rgb(0, 0, 0);
+    padding-left: 3rem;
+    font-size: 1.1rem;
+    font-style: italic;
     width: 50%;
     float: left;
     padding: 15px;
     position: relative;
 }
-.menu-restaurant {
-    display: block;
-    float: left;
-    color: rgb(0, 0, 0);
-    padding-left: 3rem;
-    font-size: 1.1rem;
-    font-style: italic;
+@media  (max-width: 900px) {
+    .menu-restaurant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    .menu-section {padding:3rem;}
+    #menu-container {
+        width: 98%;
+        padding: 1rem;
+    }
+    
 }
 .menu-restaurant .menu-title {
     float: left;
-    font-size: 1.5em;
+    font-size: 1.3em;
    
     font-weight: bold;
     color: #5f0000;
