@@ -1,0 +1,307 @@
+/*css reset*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.active {
+  height: 65px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.7em;
+
+}
+
+li a:hover {
+  color: red;
+}
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+    font-family: 'Ms Madi', cursive;
+    
+}
+h2 {
+    color: white;
+    text-shadow: black 2px 3px 18px;
+}
+.title {
+    text-shadow: 1px 5px 33px;
+}
+span {
+    font-size: 1.2em;
+}
+
+/*for video section*/
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+    
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: tomato;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	transition: 0.3s;
+}
+.btn:hover {
+	transform: scale(0.98);
+    background-color: rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*for menu section*/
+#menu {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	text-align: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.952) ), url(/bricks.jpg);
+    
+}
+#menu-container {
+    background-color: rgba(255, 242, 172, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 5rem;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.menu-section {
+    padding: 10rem;
+}
+.menu-section-title{
+    padding: 3rem;
+    color: white;
+    text-shadow: black 2px 3px 18px;
+}
+.menu-restaurant{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+.menu-restaurant {
+    display: block;
+    float: left;
+    color: rgb(0, 0, 0);
+    padding-left: 3rem;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.menu-restaurant .menu-title {
+    float: left;
+    font-size: 1.5em;
+   
+    font-weight: bold;
+    color: #5f0000;
+}
+
+.menu-restaurant .menu-line {
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0,0,0,.3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+
+.menu-restaurant .menu-price {
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-restaurant span.clearfix {
+    position: relative;
+    display: block;
+}
+
+/*for events section*/
+#events {
+   
+	text-align: center;
+    min-height: 100vh;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.623) ), url(/bricks.jpg);
+    
+}
+.event-cards {
+    padding: 5rem;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+.event-card {
+    min-height: 30rem;
+    margin: 1rem;
+    min-width: fit-content;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.842);
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    
+}
+.event-card img {
+    width: 25rem;;
+}
+.events-section-title {
+background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+    color: white;
+    text-shadow: rgb(255, 255, 255) 2px 3px 18px;
+
+}
+
+/*for reservations section*/
+#reservations {
+    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	padding: 0 20px;
+}
+
+/*for map*/
+iframe {
+    margin: 0;
+   width: 100vw;
+   height: 100%;
+   position: absolute;
+   z-index: -1;
+}
+.reservation-map {
+    background: transparent;
+    padding: 5vw;
+    height: 80%;
+    min-width: 40%;
+}
+
+/*for reservation form*/
+.reservation-form {
+    background-color: rgba(243, 243, 243, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 5vw;
+    height: 80%;
+    min-width: 40%;
+}
+@media  (max-width: 767px) {
+    .reservation-form {
+        width: 100%;
+    }
+    
+}
+input[type=text],[type=email],[type=date],[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ .reservation-form .submit input{
+      background-color: tomato;
+      color: white;
+      border: white 1px solid;
+      transition: 0.3s;
+  }
+  .reservation-form .submit input:hover {
+    transform: scale(0.98);
+    background-color: rgba(170, 9, 9, 0.9);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
